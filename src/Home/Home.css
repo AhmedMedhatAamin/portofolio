@@ -1,0 +1,113 @@
+/* Navbar Styles */
+.navbar {
+    align-items: center;
+    display: flex;
+    background-color: #282c34;
+    padding: 1rem 2rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    color: #ffffff;
+    justify-content: space-between;
+    position: relative;
+    z-index: 1000;
+    /* Ensures navbar is on top of other elements */
+}
+
+.navbar .logo {
+    color: #61dafb;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.navbar ul {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    color: #ffffff;
+}
+
+.navbar li {
+    margin: 0 1rem;
+    color: #ffffff;
+}
+
+.navbar a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+    transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+.navbar a.active {
+    color: #61dafb;
+    font-weight: bold;
+}
+
+.navbar a:hover {
+    color: #61dafb;
+    background-color: rgba(97, 218, 251, 0.1);
+    border-radius: 4px;
+}
+
+/* Hamburger Button for Small Screens */
+.hamburger {
+    display: none;
+    background: black;
+    border: none;
+    font-size: 2rem;
+    cursor: pointer;
+    color: #ffffff;
+}
+
+.hamburger:focus {
+    outline: none;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+        display: none;
+        width: 100%;
+    }
+
+    .navbar.show {
+        display: flex;
+        /* Show the navbar when 'show' class is added */
+    }
+
+    .navbar ul {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .navbar li {
+        margin: 0.5rem 0;
+    }
+
+    .navbar a {
+        width: 100%;
+        text-align: left;
+        padding: 0.75rem 1rem;
+    }
+
+    /* Show hamburger button */
+    .hamburger {
+        display: block;
+    }
+}
+
+@media (min-width: 769px) {
+    .navbar {
+        display: flex;
+    }
+
+    .hamburger {
+        display: none;
+        /* Hide hamburger button on larger screens */
+    }
+}

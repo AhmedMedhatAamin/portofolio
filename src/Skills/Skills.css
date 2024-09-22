@@ -1,0 +1,116 @@
+.skills-section {
+    display: flex;
+    flex-wrap: wrap;
+    width: 90%;
+    max-width: 1200px;
+    min-height: 500px;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background-color: #ffffff;
+    border-radius: 15px;
+    margin: 40px auto;
+    padding: 20px;
+    justify-content: space-between;
+}
+
+/* Hover effects */
+.skills-section:hover {
+    transform: scale(1.02);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+}
+
+.skill-list,
+.frontEnd-skills,
+.Languages-list {
+    flex-basis: 45%;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background-color: #ffffff;
+    border-radius: 15px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+/* Hover effects for skill cards */
+.skill-list:hover,
+.frontEnd-skills:hover,
+.Languages-list:hover {
+    transform: scale(1.05);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+}
+
+.skills-section ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.skills-section ul li {
+    font-size: 1rem;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.skills-section ul li:hover {
+    color: #61dafb;
+    background-color: rgba(97, 218, 251, 0.1);
+    transform: translateY(-3px);
+    font-weight: bold;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+
+h1 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 2.5rem;
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+h1::after {
+    content: '';
+    display: block;
+    width: 100px;
+    height: 4px;
+    background-color: #61dafb;
+    margin: 10px auto 0;
+    border-radius: 2px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+
+    .skill-list,
+    .frontEnd-skills,
+    .Languages-list {
+        flex-basis: 100%;
+    }
+
+    .skills-section {
+        justify-content: center;
+        padding: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 2rem;
+    }
+
+    .skills-section {
+        padding: 10px;
+    }
+
+    .skills-section ul li {
+        font-size: 0.9rem;
+        padding: 8px;
+    }
+}
