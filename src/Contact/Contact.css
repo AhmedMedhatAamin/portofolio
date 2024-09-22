@@ -107,3 +107,74 @@
 .social-icon:hover {
     transform: scale(1.2);
 }
+
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+    .contact-us {
+        padding: 30px 20px;
+        /* Reduce padding for smaller screens */
+    }
+
+    .contact-us h1 {
+        font-size: 2rem;
+        /* Decrease heading font size */
+    }
+
+    .contact-item h3 {
+        font-size: 1.25rem;
+        /* Decrease contact item heading size */
+    }
+
+    .contact-item p {
+        font-size: 0.9rem;
+        /* Decrease address font size */
+    }
+
+    .social-media h3 {
+        font-size: 1.25rem;
+        /* Decrease social media heading size */
+    }
+
+    .social-media-links a {
+        font-size: 1.2rem;
+        /* Decrease social media icon size */
+    }
+}
+
+/* Additional styles for screens with max-width of 400px */
+@media screen and (max-width: 400px) {
+    .contact-us {
+        padding: 20px;
+        /* Further reduce padding */
+    }
+
+    .contact-us h1 {
+        font-size: 1.75rem;
+        /* Further decrease heading font size */
+    }
+
+    .contact-methods {
+        gap: 15px;
+        /* Reduce gap between contact items */
+    }
+
+    .contact-item h3 {
+        font-size: 1.2rem;
+        /* Further decrease contact item heading size */
+    }
+
+    .contact-item p {
+        font-size: 0.85rem;
+        /* Further decrease address font size */
+    }
+
+    .social-media h3 {
+        font-size: 1.2rem;
+        /* Further decrease social media heading size */
+    }
+
+    .social-media-links a {
+        font-size: 1.5rem;
+        /* Keep the size but make adjustments if needed */
+    }
+}

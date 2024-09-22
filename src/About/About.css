@@ -72,3 +72,41 @@
         display: none !important;
     }
 }
+
+/* Additional styles for screens with max-width of 400px */
+@media screen and (max-width: 400px) {
+    .about-container {
+        padding: 30px 20px;
+    }
+
+    .about-content {
+        padding: 0 10px;
+    }
+
+    .about-content h1 {
+        font-size: 1.50rem;
+    }
+
+    .about-content p {
+        font-size: 1rem;
+        /* Decrease font size for paragraphs */
+        margin-bottom: 30px;
+        /* Adjust margin */
+    }
+
+    .contact-button {
+        font-size: 0.9rem;
+        /* Slightly reduce button font size */
+        padding: 10px 20px;
+        /* Adjust padding for button */
+    }
+
+    .about-image img {
+        max-width: 200px;
+        /* Reduce image size */
+    }
+
+    .about-container {
+        margin-bottom: 30px;
+    }
+}
